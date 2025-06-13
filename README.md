@@ -5,12 +5,12 @@
 학습 목적의 자료구조 프로젝트
 
 - 개발환경
-    - IDE : Rider, VusialStudio 2022
+    - IDE : Rider, VisualStudio 2022
     - VCS : Perforce, Git
 
 ### 관련 링크
 
-- GitHub : https://github.com/mmxbong9/Legacy
+- GitHub : https://github.com/mmxbong9/DataStructures.git
 
 ### 코드
 - basics
