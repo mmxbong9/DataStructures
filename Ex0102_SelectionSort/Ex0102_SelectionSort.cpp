@@ -5,7 +5,7 @@
  */
 int main(int argc, char* argv[])
 {
-    // {
+    // { // 3원소 소팅
     //     cout << boolalpha;
     //     for (int i=0; i < 3; i++) for (int j=0; j < 3; j++) for (int k=0; k < 3; k++)
     //     {
@@ -23,13 +23,33 @@ int main(int argc, char* argv[])
     //         cout << k << " " << j << " " << i << " → " << arr[0] << " " << arr[1] << " " << arr[2] << " " << Helper::IsAscSortedArray(arr, size) << endl;
     //     }
     // }
+
+    // { // 3원소 이상인 배열에서 죄소 인덱스 및 값 찾기
+    //     int arr[] = {8, 3, 2, 5, 1, 1, 2, 5, 8, 9};
+    //     int size = sizeof(arr) / sizeof(arr[0]);
+    //
+    //     assert(size > 0);
+    //
+    //     int minIndex = 0;
+    //     int minValue = arr[0];
+    //     for (int i=1; i < size; i++)
+    //     {
+    //         if (minValue > arr[i])
+    //         {
+    //             minIndex = i;
+    //             minValue = arr[i];
+    //         }
+    //     }
+    //
+    //     cout << "minIndex = " << minIndex << " minValue = " << minValue << endl;
+    // }
     
     { // unstable selection sort
         int arr[] = {8, 3, 2, 5, 1, 1, 2, 5, 8, 9};
         int size = sizeof(arr) / sizeof(arr[0]);
-
+    
         assert(size > 0);
-
+    
         Helper::PrintArrayWithPrefix("not sorted: ", arr, size);
         
         for (int i=0; i+1 < size; i++)
@@ -40,7 +60,7 @@ int main(int argc, char* argv[])
                 if (arr[j] < arr[min_index])
                     min_index = j;
             }
-
+    
             if (i != min_index)
                 swap(arr[i], arr[min_index]);
         }
